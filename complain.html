@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Complaint Box | Meridian College</title>
+  <link rel="stylesheet" href="abc.css">
+  <link rel="stylesheet" href="abc2.css">
+</head>
+<body>
+  <div class="header">
+    <h1>📢 College Complaint Box</h1>
+    <h3>Tell us your problem. We will help you.</h3>
+  </div>
+
+  <div class="card">
+    <form action="https://formspree.io/f/xeagjknr" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="department">Department</label>
+      <select id="department" name="department" required>
+        <option value="">Choose a department</option>
+        <option>CSE</option>
+        <option>AI &amp; ML</option>
+        <option>ECE</option>
+        <option>EEE</option>
+        <option>Civil</option>
+        <option>IT</option>
+      </select>
+
+      <label for="subject">Complaint about</label>
+      <select id="subject" name="subject" required>
+        <option value="">Choose a subject</option>
+        <option>Classroom</option>
+        <option>Canteen</option>
+        <option>Library</option>
+        <option>Hostel</option>
+        <option>Bus</option>
+        <option>Other</option>
+      </select>
+
+      <p><strong>How serious is it?</strong></p>
+      <input type="radio" id="small" name="level" value="Small" required>
+      <label for="small">Small</label>
+
+      <input type="radio" id="medium" name="level" value="Medium">
+      <label for="medium">Medium</label>
+
+      <input type="radio" id="big" name="level" value="Big">
+      <label for="big">Big</label>
+
+      <br><br>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="complaint">Write your complaint</label>
+      <textarea id="complaint" name="complaint" rows="5" placeholder="Write here" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="footer">
+    <h4>Complaint Box Team, College Office</h4>
+    <a href="home.html">Back to Home</a>
+  </div>
+</body>
+</html>
