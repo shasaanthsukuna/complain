@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #20243a;
+  background: #f5f6fc;
+}
+
+.topbar {
+  padding: 10px 5%;
+  background: #31244f;
+  color: white;
+  text-align: right;
+}
+
+.topbar a {
+  color: #f4e8a3;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 5%;
+  background: white;
+}
+
+.brand {
+  color: #38285f;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 22px;
+}
+
+nav a {
+  color: #33334a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero {
+  padding: clamp(60px, 10vw, 120px) 6%;
+  background: linear-gradient(115deg, #4b67dc, #764099);
+  color: white;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4rem);
+}
+
+.hero p {
+  max-width: 680px;
+  margin: 20px auto 28px;
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 8px;
+  background: white;
+  color: #49327a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.quick-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  width: min(1100px, 90%);
+  margin: 28px auto;
+}
+
+.quick-links a {
+  padding: 22px 12px;
+  border-radius: 12px;
+  background: white;
+  color: #49327a;
+  box-shadow: 0 6px 20px #211c4218;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+}
+
+.section {
+  width: min(1100px, 90%);
+  margin: auto;
+  padding: 45px 0;
+}
+
+.section h2 {
+  color: #38285f;
+  text-align: center;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid #e5e2ef;
+  border-radius: 14px;
+  background: white;
+  line-height: 1.6;
+}
+
+footer {
+  padding: 24px;
+  background: #29213e;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .quick-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 380px) {
+  .quick-links {
+    width: 94%;
+    gap: 8px;
+  }
+
+  .quick-links a {
+    padding: 18px 8px;
+    font-size: 0.9rem;
+  }
+}
